@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<conio.h>
 int ps1=0,ps2=0;
+char p1[20],p2[20];
 int	mmenu();
 int htp()
 {
@@ -22,8 +23,8 @@ int score()
 	printf("\n\t\t\t\t\tTIC TAC TOE");
 	printf("\n____________________________________________________________________________________________");
 	printf("\n\nSCORE\n");
-	printf("\n\nCrosses Has Won : %d Times",::ps1);
-	printf("\nCircles Has Won : %d Times",::ps2);
+	printf("\n\n%s Has Won : %d Times",p1,::ps1);
+	printf("\n%s Has Won : %d Times",p2,::ps2);
 	printf("\n\n\nPress Enter To Continue ");
 	getch();
 }
@@ -65,7 +66,6 @@ int game()
 	printf("\n____________________________________________________________________________________________");
 	printf("\n\nTHE GAME BOARD\n\n");
 	system("color F0");
-	char p1[20],p2[20];
 	printf("\nEnter Name Of Player Who Will Play With Crosses : ");
 	scanf("%s",&p1);
 	printf("\nEnter Name Of Player Who Will Play With Circles : ");
